@@ -1,0 +1,7 @@
+__pycache__
+.env
+.learn
+dogs-vs-cats.zip
+dogs-vs-cats/train.zip
+dogs-vs-cats/test1.zip
+
