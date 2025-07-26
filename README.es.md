@@ -6,23 +6,23 @@ Este repositorio contiene todos los proyectos desarrollados durante el bootcamp 
 ```
 .
 ├── data/ # Datasets utilizados
-├── models/ # Modelos entrenados (si aplica)
+├── models/ # Modelos 
 ├── src/ # Proyectos en formato notebook
-│ ├── Deep_learning.ipynb # Red neuronal profunda (CNN o RNN)
+│ ├── Deep_learning.ipynb # Red neuronal profunda (CNN)
 │ ├── ML_Algorithm.ipynb # Comparativa entre algoritmos de ML clásicos
 │ ├── NPL.ipynb # Procesamiento de lenguaje natural (TF-IDF, BoW)
-│ ├── app.py # Aplicación en Streamlit (si aplica)
+│ ├── app.py 
 │ ├── k-medias.ipynb # Clustering con K-Means
 │ ├── k_vecinos.ipynb # K-Nearest Neighbors
 │ ├── lineal_regularizado.ipynb # Regresión lineal regularizada (Ridge/Lasso)
 │ ├── naive_bayes.ipynb # Clasificador Naive Bayes
 │ ├── primer_EDA.ipynb # Primer análisis exploratorio general
-│ ├── regresion_lineal.ipynb # Regresión lineal simple o múltiple
+│ ├── regresion_lineal.ipynb # Regresión lineal 
 │ ├── serie_temporal.ipynb # Predicción con series temporales
 │ ├── tree.ipynb # Árboles de decisión y Random Forest
 │ ├── utils.py # Funciones auxiliares comunes
-├── README.md # Este archivo (versión en español)
-├── README.es.md # Duplicado en español (opcional)
+├── README.md # Versión en Ingles
+├── README.es.md # Versión en Español
 ├── requirements.txt # Dependencias del proyecto
 ├── .gitignore / .env.example # Configuración y variables de entorno
 ```
