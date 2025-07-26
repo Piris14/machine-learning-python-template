@@ -32,15 +32,15 @@ Este repositorio contiene todos los proyectos desarrollados durante el bootcamp 
 
 | Notebook                      | Técnica o modelo aplicado                    |
 |-------------------------------|----------------------------------------------|
-| `Deep_learning.ipynb`         | Deep Learning (red neuronal convolucional o recurrente)  
-| `ML_Algorithm.ipynb`          | Comparación de modelos clásicos de ML  
+| `Deep_learning.ipynb`         | Deep Learning (red neuronal con imágenes)  
+| `ML_Algorithm.ipynb`          | Comparación de modelos clásicos de ML con hiperparámetros
 | `NPL.ipynb`                   | Procesamiento de texto (NLP)  
 | `k_vecinos.ipynb`             | Clasificación con KNN  
 | `k-medias.ipynb`              | Clustering con K-Means  
 | `lineal_regularizado.ipynb`   | Ridge y Lasso Regression  
 | `naive_bayes.ipynb`           | Clasificación con Naive Bayes  
 | `primer_EDA.ipynb`            | Análisis exploratorio general  
-| `regresion_lineal.ipynb`      | Regresión lineal simple o múltiple  
+| `regresion_lineal.ipynb`      | Regresión lineal  
 | `serie_temporal.ipynb`        | Predicción de series temporales  
 | `tree.ipynb`                  | Árboles de decisión y Random Forest  
 
