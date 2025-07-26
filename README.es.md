@@ -3,6 +3,7 @@
 Este repositorio contiene todos los proyectos desarrollados durante el bootcamp de Ciencia de Datos e Inteligencia Artificial. Cada proyecto está implementado en su propio notebook con una estructura completa: desde la exploración inicial hasta el modelo final entrenado.
 
 ## 📁 Estructura del repositorio
+```
 .
 ├── data/ # Datasets utilizados
 ├── models/ # Modelos entrenados (si aplica)
@@ -24,7 +25,7 @@ Este repositorio contiene todos los proyectos desarrollados durante el bootcamp 
 ├── README.es.md # Duplicado en español (opcional)
 ├── requirements.txt # Dependencias del proyecto
 ├── .gitignore / .env.example # Configuración y variables de entorno
-
+```
 ---
 
 ## 📌 Contenido por proyecto
