@@ -1,112 +1,69 @@
-# Plantilla de Proyecto de Ciencia de Datos
+# 🧠 Machine Learning Python Template – Bootcamp Final Projects
 
-Esta plantilla está diseñada para impulsar proyectos de ciencia de datos proporcionando una configuración básica para conexiones de base de datos, procesamiento de datos, y desarrollo de modelos de aprendizaje automático. Incluye una organización estructurada de carpetas para tus conjuntos de datos y un conjunto de paquetes de Python predefinidos necesarios para la mayoría de las tareas de ciencia de datos.
+Este repositorio contiene todos los proyectos desarrollados durante el bootcamp de Ciencia de Datos e Inteligencia Artificial. Cada proyecto está implementado en su propio notebook con una estructura completa: desde la exploración inicial hasta el modelo final entrenado.
 
-## Estructura
+## 📁 Estructura del repositorio
+.
+├── data/ # Datasets utilizados
+├── models/ # Modelos entrenados (si aplica)
+├── src/ # Proyectos en formato notebook
+│ ├── Deep_learning.ipynb # Red neuronal profunda (CNN o RNN)
+│ ├── ML_Algorithm.ipynb # Comparativa entre algoritmos de ML clásicos
+│ ├── NPL.ipynb # Procesamiento de lenguaje natural (TF-IDF, BoW)
+│ ├── app.py # Aplicación en Streamlit (si aplica)
+│ ├── k-medias.ipynb # Clustering con K-Means
+│ ├── k_vecinos.ipynb # K-Nearest Neighbors
+│ ├── lineal_regularizado.ipynb # Regresión lineal regularizada (Ridge/Lasso)
+│ ├── naive_bayes.ipynb # Clasificador Naive Bayes
+│ ├── primer_EDA.ipynb # Primer análisis exploratorio general
+│ ├── regresion_lineal.ipynb # Regresión lineal simple o múltiple
+│ ├── serie_temporal.ipynb # Predicción con series temporales
+│ ├── tree.ipynb # Árboles de decisión y Random Forest
+│ ├── utils.py # Funciones auxiliares comunes
+├── README.md # Este archivo (versión en español)
+├── README.es.md # Duplicado en español (opcional)
+├── requirements.txt # Dependencias del proyecto
+├── .gitignore / .env.example # Configuración y variables de entorno
 
-El proyecto está organizado de la siguiente manera:
+---
 
-- **`src/app.py`** → Script principal de Python donde correrá tu proyecto.
-- **`src/explore.ipynb`** → Notebook para exploración y pruebas. Una vez finalizada la exploración, migra el código limpio a `app.py`.
-- **`src/utils.py`** → Funciones auxiliares, como conexión a bases de datos.
-- **`requirements.txt`** → Lista de paquetes de Python necesarios.
-- **`models/`** → Contendrá tus clases de modelos SQLAlchemy.
-- **`data/`** → Almacena los datasets en diferentes etapas:
-  - **`data/raw/`** → Datos sin procesar.
-  - **`data/interim/`** → Datos transformados temporalmente.
-  - **`data/processed/`** → Datos listos para análisis.
+## 📌 Contenido por proyecto
 
+| Notebook                      | Técnica o modelo aplicado                    |
+|-------------------------------|----------------------------------------------|
+| `Deep_learning.ipynb`         | Deep Learning (red neuronal convolucional o recurrente)  
+| `ML_Algorithm.ipynb`          | Comparación de modelos clásicos de ML  
+| `NPL.ipynb`                   | Procesamiento de texto (NLP)  
+| `k_vecinos.ipynb`             | Clasificación con KNN  
+| `k-medias.ipynb`              | Clustering con K-Means  
+| `lineal_regularizado.ipynb`   | Ridge y Lasso Regression  
+| `naive_bayes.ipynb`           | Clasificación con Naive Bayes  
+| `primer_EDA.ipynb`            | Análisis exploratorio general  
+| `regresion_lineal.ipynb`      | Regresión lineal simple o múltiple  
+| `serie_temporal.ipynb`        | Predicción de series temporales  
+| `tree.ipynb`                  | Árboles de decisión y Random Forest  
 
-## ⚡ Configuración Inicial en Codespaces (Recomendado)
+---
 
-No es necesario realizar ninguna configuración manual, ya que **Codespaces se configura automáticamente** con los archivos predefinidos que ha creado la academia para ti. Simplemente sigue estos pasos:
+## 🧪 Librerías necesarias
 
-1. **Espera a que el entorno se configure automáticamente**.
-   - Todos los paquetes necesarios y la base de datos se instalarán por sí mismos.
-   - El `username` y `db_name` creados automáticamente están en el archivo **`.env`** en la raíz del proyecto.
-2. **Una vez que Codespaces esté listo, puedes comenzar a trabajar inmediatamente**.
-
-
-## 💻 Configuración en Local (Solo si no puedes usar Codespaces)
-
-**Prerrequisitos**
-
-Asegúrate de tener Python 3.11+ instalado en tu máquina. También necesitarás pip para instalar los paquetes de Python.
-
-**Instalación**
-
-Clona el repositorio del proyecto en tu máquina local.
-
-Navega hasta el directorio del proyecto e instala los paquetes de Python requeridos:
+Asegúrate de tener instaladas todas las dependencias:
 
 ```bash
 pip install -r requirements.txt
 ```
+---
 
-**Crear una base de datos (si es necesario)**
+## 🚀 Cómo ejecutar
 
-Crea una nueva base de datos dentro del motor Postgres personalizando y ejecutando el siguiente comando: 
+📓 Notebooks
+Abre cualquier notebook con JupyterLab, VS Code o Google Colab para analizar y reproducir los proyectos.
 
-```bash
-$ psql -U postgres -c "DO \$\$ BEGIN 
-    CREATE USER mi_usuario WITH PASSWORD 'mi_contraseña'; 
-    CREATE DATABASE mi_base_de_datos OWNER mi_usuario; 
-END \$\$;"
-```
-Conéctate al motor Postgres para usar tu base de datos, manipular tablas y datos: 
+## 👨‍💻 Autor
 
-```bash
-$ psql -U mi_usuario -d mi_base_de_datos
-```
+Este proyecto fue desarrollado por @Piris14 como recopilación final del bootcamp.
 
-¡Una vez que estés dentro de PSQL podrás crear tablas, hacer consultas, insertar, actualizar o eliminar datos y mucho más!
+## 📄 Licencia
 
-**Variables de entorno**
-
-Crea un archivo .env en el directorio raíz del proyecto para almacenar tus variables de entorno, como tu cadena de conexión a la base de datos:
-
-```makefile
-DATABASE_URL="postgresql://<USUARIO>:<CONTRASEÑA>@<HOST>:<PUERTO>/<NOMBRE_BD>"
-
-#example
-DATABASE_URL="postgresql://mi_usuario:mi_contraseña@localhost:5432/mi_base_de_datos"
-```
-
-## Ejecutando la Aplicación
-
-Para ejecutar la aplicación, ejecuta el script app.py desde la raíz del directorio del proyecto:
-
-```bash
-python src/app.py
-```
-
-## Añadiendo Modelos
-
-Para añadir clases de modelos SQLAlchemy, crea nuevos archivos de script de Python dentro del directorio models/. Estas clases deben ser definidas de acuerdo a tu esquema de base de datos.
-
-Definición del modelo de ejemplo (`models/example_model.py`):
-
-```py
-from sqlalchemy.orm import DeclarativeBase
-from sqlalchemy import String
-from sqlalchemy.orm import Mapped, mapped_column
-
-Base = declarative_base()
-
-class ExampleModel(Base):
-    __tablename__ = 'example_table'
-    id: Mapped[int] = mapped_column(primary_key=True)
-    username: Mapped[str] = mapped_column(unique=True)
-```
-
-## Trabajando con Datos
-
-Puedes colocar tus conjuntos de datos brutos en el directorio data/raw, conjuntos de datos intermedios en data/interim, y los conjuntos de datos procesados listos para el análisis en data/processed.
-
-Para procesar datos, puedes modificar el script app.py para incluir tus pasos de procesamiento de datos, utilizando pandas para la manipulación y análisis de datos.
-
-## Contribuyentes
-
-Esta plantilla fue construida como parte del [Data Science and Machine Learning Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) de 4Geeks Academy por [Alejandro Sanchez](https://twitter.com/alesanchezr) y muchos otros contribuyentes. Descubre más sobre [los programas BootCamp de 4Geeks Academy](https://4geeksacademy.com/us/programs) aquí.
-
-Otras plantillas y recursos como este se pueden encontrar en la página de GitHub de la escuela.
+Este repositorio está licenciado bajo los términos de la licencia MIT.
+Libre para uso personal, académico o profesional.
